@@ -8,7 +8,8 @@ let router= express.Router();//3
 
 router.post('/userRegistrstion',userController.register );//4
 
-
+router.get('/getUserdetails/:id',userController.getUserDetails);
+router.put('/updateUserdetails',userController.UpdateUserDetails );
 module.exports=router;
 
 

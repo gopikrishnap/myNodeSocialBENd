@@ -11,6 +11,8 @@ let UserDetails = new mongoose.Schema({
     gender:  String,
     // // dob: Date,
     // isverified: { type: Boolean, default: false }
+},{
+    timestamps:true 
 })
 let UserModel=mongoose.model('users',UserDetails);
 
